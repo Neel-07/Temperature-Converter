@@ -1,13 +1,14 @@
 
-Temperature Converter Project
+## Temperature Converter Project
 
 Welcome to the Temperature Converter project repository! This project is a simple website built using HTML, CSS, and JavaScript, allowing users to convert temperatures between Celsius and Fahrenheit. The intuitive interface and responsive design make temperature conversion a breeze.
 
-Features
+## Features
 Convert temperatures from Celsius to Fahrenheit and vice versa.
 Interactive and user-friendly interface.
 Real-time conversion as users input values.
-How to Use
+
+## How to Use
 Clone this repository to your local machine using:
 
 bash
@@ -20,7 +21,7 @@ Enter a temperature value in either Celsius or Fahrenheit input field.
 The corresponding temperature will be instantly displayed in the other unit.
 
 
-Technologies Used
+## Technologies Used
 HTML5
 CSS3
 JavaScript
