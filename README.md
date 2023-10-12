@@ -62,6 +62,11 @@ We welcome contributions from the community! If you'd like to contribute to this
     Feel free to explore, modify, and enhance the project. Your contributions are valuable and appreciated! 🙌
 
 
+## License 🎟️
+This project is licensed under the MIT License.
+
+## Starring the Repository ⭐
+If you find this project useful or interesting, consider starring the repository! Click the "Star ⭐" button at the top of the repository page.
 
 
 
