@@ -20,6 +20,9 @@ Enter a temperature value in either Celsius or Fahrenheit input field.
 
 The corresponding temperature will be instantly displayed in the other unit.
 
+<img width="415" alt="image" src="https://github.com/Neel-07/Temperature-Converter/assets/112561276/ff7f33a1-4b86-405e-82cf-84aa211208d3">
+
+
 
 ## Technologies Used
 HTML5
