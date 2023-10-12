@@ -31,11 +31,11 @@ body {
 
 .temperature-icon {
     font-size: 45px;
-    color: #4d5964;
+    color: #000;
 }
 
 h1 {
-    color: #4d5964;
+    color: #000;
     letter-spacing: 1.2px;
     font-size: 30px;
 }
