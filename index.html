@@ -24,33 +24,72 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <!-- goole font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
+
     <!-- Link to your CSS file -->
   </head>
   <body>
     <div class="container">
       <div class="title">
         <h1>Temperature Converter</h1>
-        <span class="temperature-icon"
-          ><i class="fas fa-temperature-high"></i
-        ></span>
+        <span class="temperature-icon"><i class="fas fa-temperature-high"></i></span>
       </div>
 
-      <div class="temperature-input" id="celsius">
-        <input type="number" id="celsiusInput" placeholder="Celsius" />
-        <span class="unit">°C</span>
-      </div>
-      <div class="temperature-input" id="fahrenheit">
-        <input type="number" id="fahrenheitInput" placeholder="Fahrenheit" />
-        <span class="unit">°F</span>
-      </div>
-      <div class="temperature-input" id="kelvin">
-        <input type="number" id="kelvinInput" placeholder="Kelvin" />
-        <span class="unit">K</span>
-      </div>
+        <div class="temperature-input" id="celsius">
+          <input type="number" id="celsiusInput" placeholder="Celsius" />
+          <span class="unit">°C</span>
+        </div>
+        <div class="temperature-input" id="fahrenheit">
+          <input type="number" id="fahrenheitInput" placeholder="Fahrenheit" />
+          <span class="unit">°F</span>
+        </div>
+        <div class="temperature-input" id="kelvin">
+          <input type="number" id="kelvinInput" placeholder="Kelvin" />
+          <span class="unit">K</span>
+        </div>
 
-      <div class="button">
-        <button id="clearButton">All Clear</button>
+        <div class="button">
+          <button id="clearButton">All Clear</button>
+        </div>
+      </div>
+      <div class="thirdItem">
+        <div class="copy-link-container">
+          <img
+            class="hyperLink"
+            src="https://img.icons8.com/ios/50/link--v2.png"
+            alt="link--v2"
+          />
+          <button id="copy-button">Copy Link</button>
+        </div>
       </div>
     </div>
 
