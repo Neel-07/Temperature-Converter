@@ -13,7 +13,7 @@ body {
 }
 
 /* ///// */
-.container {
+.containers {
   /* max-width: 450px; */
   display: block;
   width: auto;
@@ -79,6 +79,28 @@ input {
 .button {
   margin-top: 25px;
   text-align: center;
+}
+
+/* Tour css */
+.start-tour-button {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 4px;
+  margin-right: 6px;
+  border: 1px solid black;
+  transition: 0.3;
+}
+
+.start-tour-button:hover {
+  background: #000;
+  border-radius: 4px;
+}
+
+.start-tour-button:hover .tour-icon {
+  filter: brightness(0) invert(1);
 }
 
 button {
