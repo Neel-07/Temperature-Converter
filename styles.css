@@ -44,6 +44,8 @@
   color: #fff;
   border: none;
   padding: 5px 10px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
   cursor: pointer;
 }
 
