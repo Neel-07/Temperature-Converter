@@ -18,8 +18,6 @@ function convertTemperatures() {
     }
     else 
     {
-        if(celsiusInput.value==="")
-            alert("Please enter a valid numerical value");
         celsiusInput.value = "";
         fahrenheitInput.value="";
         kelvinInput.value="";
@@ -38,8 +36,6 @@ fahrenheitInput.addEventListener('input', function() {
     }
     else 
     {
-        if(fahrenheitInput.value!=="")
-            alert("Please enter a valid numerical value");
         celsiusInput.value = "";
         fahrenheitInput.value="";
         kelvinInput.value="";
@@ -57,8 +53,6 @@ kelvinInput.addEventListener('input', function() {
     }
     else 
     {
-        if(fahrenheitInput.value!=="")
-            alert("Please enter a valid numerical value");
         celsiusInput.value = "";
         fahrenheitInput.value="";
         kelvinInput.value="";
