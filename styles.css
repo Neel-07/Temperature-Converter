@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f2f2f2; /* Background color for the body */
+  background: linear-gradient(to top, rgb(0, 174, 255), green); /* Background color for the body */
 }
 
 /* ///// */
@@ -21,9 +21,9 @@ body {
   margin: 20px;
   background: #06e6a6;
   border-radius: 8px;
-  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.4);
   font-family: sans-serif;
-  padding: 20px;
+  padding: 50px 45px;
 }
 
 .title {
@@ -32,15 +32,14 @@ body {
   align-items: center;
   flex-wrap: wrap-reverse;
   gap: 10px;
+  color: #000;
 }
 
 .temperature-icon {
   font-size: 45px;
-  color: #000;
 }
 
 h1 {
-  color: #000;
   letter-spacing: 1.2px;
   font-size: 30px;
 }
@@ -70,8 +69,9 @@ input {
   line-height: 60px;
   padding: 0 5px;
   text-align: center;
-  font-size: 30px;
-  background: #4d5964;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgb(0, 174, 255);
   color: #fff;
   border-radius: 0 8px 8px 0;
 }
@@ -84,16 +84,16 @@ input {
 button {
   border: none;
   outline: none;
-  padding: 10px 30px;
+  padding: 15px 60px;
   font-size: 20px;
   font-weight: 600;
   border-radius: 4px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 button:hover {
-  background: #000;
+  background: rgb(0, 174, 255);
   color: #fff;
 }
 
