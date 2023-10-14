@@ -2,22 +2,70 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.heading{
+    font-size: 42px;
+    color: white;
+    letter-spacing: 1px;
 }
 
-body {
+.title{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+
+}
+.headingTitle{
+    color: black;
+    font-weight: 600;
+    font-size: 26px;
+}
+.copy-link-container {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: #007bff;
+}
+.thirdItem{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    padding-right: 4rem;
+}
+
+#link-input {
+  flex-grow: 1;
+  padding: 5px;
+}
+
+#copy-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+.fas{
+    color: rgba(255, 0, 0, 0.508);
+}
+.appContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     min-height: 100vh;
-    background-color: #f2f2f2; /* Background color for the body */
+    background-color: #000000da; /* Background color for the body */
 }
 
 .container {
     max-width: 450px;
-    background: #06E6A6;
+    background: #a3a4a4a5;
     border-radius: 8px;
-    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.4);
     font-family: sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     padding: 20px;
 }
 
@@ -38,6 +86,11 @@ h1 {
     color: #000;
     letter-spacing: 1.2px;
     font-size: 30px;
+}
+.hyperLink{
+    height: 30px;
+    /* color: white; */
+    width: 20px;
 }
 
 .temperature-input {
