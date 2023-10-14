@@ -1,54 +1,41 @@
 let celsiusInput = document.querySelector("#celsiusInput");
 let fahrenheitInput = document.querySelector("#fahrenheitInput");
 let kelvinInput = document.querySelector("#kelvinInput");
-let clearButton = document.querySelector("#clearButton");
 
 function roundNumber(number) {
   return Math.round(number * 100) / 100;
 }
 
-function fromCelsius() {
-    let cTemp = parseFloat(celsiusInput.value);
+function updateFields() {
+  let value = parseFloat(this.value);
 
-    if (!isNaN(cTemp)){
-        let fTemp = (cTemp * 9) / 5 + 32;
-        let kTemp = cTemp + 273.15;
+  if (!isNaN(value)) {
+    if (this === celsiusInput) {
+      let fTemp = (value * 9) / 5 + 32;
+      let kTemp = value + 273.15;
 
-        fahrenheitInput.value = roundNumber(fTemp);
-        kelvinInput.value = roundNumber(kTemp);
+      fahrenheitInput.value = roundNumber(fTemp);
+      kelvinInput.value = roundNumber(kTemp);
+    } else if (this === fahrenheitInput) {
+      let cTemp = ((value - 32) * 5) / 9;
+      let kTemp = ((value - 32) * 5) / 9 + 273.15;
+
+      celsiusInput.value = roundNumber(cTemp);
+      kelvinInput.value = roundNumber(kTemp);
+    } else if (this === kelvinInput) {
+      let cTemp = value - 273.15;
+      let fTemp = ((value - 273.15) * 9) / 5 + 32;
+
+      celsiusInput.value = roundNumber(cTemp);
+      fahrenheitInput.value = roundNumber(fTemp);
     }
-  
+  }
 }
 
+celsiusInput.addEventListener('input', updateFields);
+fahrenheitInput.addEventListener('input', updateFields);
+kelvinInput.addEventListener('input', updateFields);
 
-function fromFahrenheit() {
-    let fTemp = parseFloat(fahrenheitInput.value);
-
-    if (!isNaN(fTemp)){
-        let cTemp = ((fTemp - 32) * 5) / 9;
-        let kTemp = ((fTemp - 32) * 5) / 9 + 273.15;
-
-        celsiusInput.value = roundNumber(cTemp);
-        kelvinInput.value = roundNumber(kTemp);
-    }
-}
-
-function fromKelvin() {
-    let kTemp = parseFloat(kelvinInput.value);
-
-    if(!isNaN(kTemp)){
-        let cTemp = kTemp - 273.15;
-        let fTemp = ((kTemp - 273.15) * 9) / 5 + 32;
-
-        celsiusInput.value = roundNumber(cTemp);
-        fahrenheitInput.value = roundNumber(fTemp);
-    }
-    
-}
-
-celsiusInput.addEventListener('input', fromCelsius);
-fahrenheitInput.addEventListener('input', fromFahrenheit);
-kelvinInput.addEventListener('input', fromKelvin)
 
 clearButton.addEventListener("click", function () {
   celsiusInput.value = "";
