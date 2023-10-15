@@ -6,6 +6,7 @@ function roundNumber(number) {
   return Math.round(number * 100) / 100;
 }
 
+
 function updateFields() {
   let value = parseFloat(this.value);
 
