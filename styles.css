@@ -145,3 +145,69 @@ button:hover {
     font-weight: 480;
   }
 }
+
+input:hover{
+  border: 3px solid #0fbb8a;
+  box-shadow: 0px 0px 5px 5px rgba(10, 200, 83, 0.65);
+}
+#clearButton{
+  border-radius: 4px;
+}
+
+.footer {
+  background-color: #2e2c2c;
+}
+
+.footer .social {
+  padding: 20px 0;
+  text-align: center;
+  color: #646566;
+  background-color: #2e2c2c;
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+  color: #06e6a6;
+}
+
+.footer .social a:hover {
+  opacity: 0.9;
+  background-color: #474b4b;
+}
+
+
+.footer {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #f6ecec;
+}
+.copyright-heading {
+  text-align: center;
+  font-size: 20px;
+  color: #f5efef;
+}
+
+.footer-para{
+  text-wrap: wrap;
+  padding:10px ; 
+  font-size: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: justify;
+}
