@@ -37,10 +37,6 @@ Welcome to the Temperature Converter project repository! This web application pr
 - **CSS3**: For styling the user interface.
 - **JavaScript**: For real-time temperature conversion.
 
-## Demo/Video
-
-<video src="temp-converter.mp4" controls title="Title"></video>
-
 ## How to Contribute 🧩
 
 We welcome contributions from the community! If you'd like to contribute to this project, follow these steps:
