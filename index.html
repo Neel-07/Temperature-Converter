@@ -1,144 +1,93 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
 
-    <!-- Added CDN for tour guide -->
-    <script src="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/intro.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/minified/introjs.min.css"
-    />
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
 
-    <!-- Added CDN for Tooltip -->
+  <!-- Added CDN for tour guide -->
+  <script src="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/intro.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/minified/introjs.min.css" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Added CDN for Tooltip -->
 
-    <!-- Link to your CSS file -->
-  </head>
-  <body style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-    <div class="start-tour-button">
-      <button id="startTourButton">
-        <img
-          src="./assets/images/tour-guide.png"
-          height="24"
-          width="24"
-          class="tour-icon"
-          alt="Tour-guide"
-        />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 
-        Start Tour
-      </button>
-    </div>
-    <div class="containers" style="margin-top: 4rem; margin-bottom: 3rem;">
-      <div class="title">
-        <h1>Temperature Converter</h1>
-        <span class="temperature-icon"
-          ><i class="fas fa-temperature-high"></i
-        ></span>
-      </div>
+  <!-- Link to your CSS file -->
+</head>
 
-      <!-- Add the Start Tour button in the top right corner -->
-
-      <div
-        class="temperature-input"
-        id="celsius"
-        data-step="1"
-        data-intro="Hello"
-        data-bs-toggle="tooltip"
-        data-bs-placement="top"
-        title="Convert Celsius Here"
-      >
-        <input type="number" id="celsiusInput" placeholder="Celsius" />
-        <span class="unit">°C</span>
-      </div>
-      <div
-        class="temperature-input"
-        id="fahrenheit"
-        data-bs-toggle="tooltip"
-        data-bs-placement="top"
-        title="Convert fahrenheit Here"
-      >
-        <input type="number" id="fahrenheitInput" placeholder="Fahrenheit" />
-        <span class="unit">°F</span>
-      </div>
-      <div
-        class="temperature-input"
-        id="kelvin"
-        data-bs-toggle="tooltip"
-        data-bs-placement="top"
-        title="Convert kelvin Here"
-      >
-        <input type="number" id="kelvinInput" placeholder="Kelvin" />
-        <span class="unit">K</span>
-      </div>
-
-      <div class="button">
-        <button id="clearButton">All Clear</button>
-      </div>
+<body style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+  <div class="start-tour-button">
+    <button id="startTourButton">
+      Start Tour
+    </button>
+  </div>
+  <div class="containers" style="margin-top: 4rem; margin-bottom: 3rem;">
+    <div class="title">
+      <h1>Temperature Converter</h1>
+      <span class="temperature-icon"><i class="fas fa-temperature-high"></i></span>
     </div>
 
-    <!-- Footer Section -->
-   <!-- Footer Section -->
-<section class="footer" style="width: 100%;">
-  <div style="padding-top: 20px;">
-    <h2>Temperature Converter</h2>
-    <p class="footer-para">
-      Simplify temperature conversions with our user-friendly tool. Quickly switch between Celsius, Fahrenheit, and Kelvin using HTML, CSS, and JavaScript. 
-      Stay connected for more updates! 🌡️🔥❄️
+    <!-- Add the Start Tour button in the top right corner -->
+
+    <div class="temperature-input" id="celsius" data-step="1" data-intro="Hello" data-bs-toggle="tooltip"
+      data-bs-placement="top" title="Convert Celsius Here">
+      <input type="number" id="celsiusInput" placeholder="Celsius" />
+      <span class="unit">°C</span>
+    </div>
+    <div class="temperature-input" id="fahrenheit" data-bs-toggle="tooltip" data-bs-placement="top"
+      title="Convert fahrenheit Here">
+      <input type="number" id="fahrenheitInput" placeholder="Fahrenheit" />
+      <span class="unit">°F</span>
+    </div>
+    <div class="temperature-input" id="kelvin" data-bs-toggle="tooltip" data-bs-placement="top"
+      title="Convert kelvin Here">
+      <input type="number" id="kelvinInput" placeholder="Kelvin" />
+      <span class="unit">K</span>
+    </div>
+
+    <div class="button">
+      <button id="clearButton">All Clear</button>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <!-- Footer Section -->
+  <section class="footer" style="width: 100%;">
+    <div style="padding-top: 20px;">
+      <h2>Temperature Converter</h2>
+      <p class="footer-para">
+        Simplify temperature conversions with our user-friendly tool. Quickly switch between Celsius, Fahrenheit, and
+        Kelvin using HTML, CSS, and JavaScript.
+        Stay connected for more updates! 🌡️🔥❄️
+      </p>
+    </div>
+    <div class="social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-snapchat"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <hr />
+    <p class="copyright-heading">Made with ❤️</p>
+    <p class="copyright">
+      &copy; 2023 - Temperature Converter
     </p>
-  </div>
-  <div class="social">
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-snapchat"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-  </div>
-  <hr/>
-  <p class="copyright-heading">Made with ❤️</p>
-  <p class="copyright">
-    &copy; 2023 - Temperature Converter
-  </p>
-</section>
+  </section>
 
-    <script src="script.js"></script>
-    <!-- Include your JavaScript file -->
-  </body>
+  <script src="script.js"></script>
+  <!-- Include your JavaScript file -->
+</body>
+
 </html>
