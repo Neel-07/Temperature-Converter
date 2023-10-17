@@ -9,10 +9,17 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background: linear-gradient(
+    to top,
+    rgb(0, 174, 255),
+    green
+  ); /* Background color for the body */
+
   background-image: url("assets/images/bgimage11.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   /* Background color for the body */
+
 }
 
 /* ///// */
@@ -93,37 +100,23 @@ input {
   right: 0;
   margin-top: 4px;
   margin-right: 6px;
-  transition: 0.3;
 }
 
-.start-tour-button:hover {
-  border-radius: 4px;
-}
-
-.start-tour-button:hover .tour-icon {
-  filter: brightness(0) invert(1);
-}
-
-.Button {
-  all: unset;
-  width: 100px;
-  height: 30px;
-  font-size: 16px;
-  background: transparent;
+button {
   border: none;
-  position: relative;
-  color: #f0f0f0;
+  outline: none;
+  padding: 15px 60px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 4px;
   cursor: pointer;
-  z-index: 1;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  transition: background-color 0.3s;
 }
+
+
+button:hover {
+  background: rgb(0, 174, 255);
+  color: #fff;
 
 .Button::after,
 .Button::before {
@@ -164,12 +157,9 @@ input {
   transform: translate(0, 0);
   width: 100%;
   height: 100%;
+
 }
 
-.Button:active::after {
-  transition: 0s;
-  transform: translate(0, 5%);
-}
 /* Media Queries */
 
 @media (max-width: 499px) {
@@ -201,6 +191,15 @@ input {
   border: 3px solid #0fbb8a;
   box-shadow: 0px 0px 5px 5px rgba(10, 200, 83, 0.65);
 }
+
+#clearButton,
+#startTourButton {
+  border-radius: 8px;
+}
+
+#startTourButton {
+  border: 0;
+
 #clearButton {
   border-radius: 4px;
   padding: 6px;
@@ -210,6 +209,7 @@ input {
 }
 #clearButton:hover {
   background-color: #e8e5e5;
+
 }
 
 .footer {
