@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/minified/introjs.min.css" />
 
   <!-- Added CDN for Tooltip -->
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -27,32 +26,29 @@
   <!-- Link to your CSS file -->
 </head>
 
-<body style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-  <div class="start-tour-button">
-    <button id="startTourButton">
-      Start Tour
-    </button>
+<body>
+  <div class="header">
+    <h1>Temperature Converter</h1>
+    <span class="temperature-icon"><i class="fas fa-temperature-high"></i></span>
   </div>
-  <div class="containers" style="margin-top: 4rem; margin-bottom: 3rem;">
-    <div class="title">
-      <h1>Temperature Converter</h1>
-      <span class="temperature-icon"><i class="fas fa-temperature-high"></i></span>
-    </div>
 
-    <!-- Add the Start Tour button in the top right corner -->
+  <div class="start-tour-button">
+    <button id="startTourButton">Start Tour</button>
+  </div>
 
+  <div class="containers">
     <div class="temperature-input" id="celsius" data-step="1" data-intro="Hello" data-bs-toggle="tooltip"
       data-bs-placement="top" title="Convert Celsius Here">
       <input type="number" id="celsiusInput" placeholder="Celsius" />
       <span class="unit">°C</span>
     </div>
     <div class="temperature-input" id="fahrenheit" data-bs-toggle="tooltip" data-bs-placement="top"
-      title="Convert fahrenheit Here">
+      title="Convert Fahrenheit Here">
       <input type="number" id="fahrenheitInput" placeholder="Fahrenheit" />
       <span class="unit">°F</span>
     </div>
     <div class="temperature-input" id="kelvin" data-bs-toggle="tooltip" data-bs-placement="top"
-      title="Convert kelvin Here">
+      title="Convert Kelvin Here">
       <input type="number" id="kelvinInput" placeholder="Kelvin" />
       <span class="unit">K</span>
     </div>
@@ -62,10 +58,8 @@
     </div>
   </div>
 
-  <!-- Footer Section -->
-  <!-- Footer Section -->
-  <section class="footer" style="width: 100%;">
-    <div style="padding-top: 20px;">
+  <section class="footer">
+    <div class="footer-content">
       <h2>Temperature Converter</h2>
       <p class="footer-para">
         Simplify temperature conversions with our user-friendly tool. Quickly switch between Celsius, Fahrenheit, and
@@ -87,7 +81,6 @@
   </section>
 
   <script src="script.js"></script>
-  <!-- Include your JavaScript file -->
 </body>
 
 </html>
