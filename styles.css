@@ -15,10 +15,7 @@ body {
     green
   ); /* Background color for the body */
 
-  background-image: url("assets/images/bgimage11.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* Background color for the body */
+ background: linear-gradient(to top, rgb(0, 174, 255), green); /* Background color for the body */
 
 }
 
