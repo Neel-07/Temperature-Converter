@@ -47,7 +47,7 @@ body {
 }
 
 .start-tour-button button {
-  border: none;
+  border: #000000;
   outline: none;
   padding: 12px 30px;
   font-size: 18px;
@@ -56,7 +56,7 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
   background-color: #06e6a6;
-  color: #fff;
+  color: #800080;
 }
 
 .start-tour-button button:hover {
