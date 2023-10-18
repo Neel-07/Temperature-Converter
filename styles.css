@@ -15,24 +15,15 @@ body {
   background: linear-gradient(to top, #0093E9, #80D0C7);
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.temperature{
-  margin-right: 5px;
-}
-
 /* Start Tour Button Styles */
 .start-tour-button {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 3.8rem;
-  right: 1rem;
+  top: 0;
+  right: 0;
+  margin-top: 1rem;
+  margin-right: 1rem;
 }
 
 .start-tour-button button {
