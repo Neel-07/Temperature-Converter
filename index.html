@@ -23,63 +23,75 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Link to your CSS file -->
 </head>
 
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>Temperature Converter</h1>
-      <span class="temperature-icon"><i class="fas fa-temperature-high"></i></span>
-    </div>
+  <header>
+    <nav>
+      <div class="home-bar">
+        <a href="/">Home</a>
+      </div>
+      <div class="app-name">
+        <a href="/">Temperature Converter</a>
+      </div>
+    </nav>
+  </header>
 
-    <div class="start-tour-button">
-      <button id="startTourButton">Start Tour</button>
-    </div>
-
-    <div class="containers">
-      <div class="temperature-input" id="celsius" data-step="1" data-intro="Hello" data-bs-toggle="tooltip"
-        data-bs-placement="top" title="Convert Celsius Here">
-        <input type="number" id="celsiusInput" placeholder="Celsius" />
-        <span class="unit">°C</span>
-      </div>
-      <div class="temperature-input" id="fahrenheit" data-bs-toggle="tooltip" data-bs-placement="top"
-        title="Convert Fahrenheit Here">
-        <input type="number" id="fahrenheitInput" placeholder="Fahrenheit" />
-        <span class="unit">°F</span>
-      </div>
-      <div class="temperature-input" id="kelvin" data-bs-toggle="tooltip" data-bs-placement="top"
-        title="Convert Kelvin Here">
-        <input type="number" id="kelvinInput" placeholder="Kelvin" />
-        <span class="unit">K</span>
-      </div>
-
-      <div class="button">
-        <button id="clearButton">All Clear</button>
-      </div>
-    </div>
-
-    <section class="footer">
-      <div class="footer-content">
-        <h2>Temperature Converter</h2>
-        <p class="footer-para">
-          Simplify temperature conversions with our user-friendly tool. Quickly switch between Celsius, Fahrenheit, and
-          Kelvin using HTML, CSS, and JavaScript. Stay connected for more updates! 🌡️🔥❄️
-        </p>
-      </div>
-      <div class="social">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-snapchat"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-      </div>
-      <hr />
-      <p class="copyright-heading">Made with ❤️</p>
-      <p class="copyright">
-        &copy; 2023 - Temperature Converter
-      </p>
-    </section>
+  <div class="header">
+    <h1>Temperature Converter</h1>
+    <span class="temperature-icon"><i class="fas fa-temperature-high"></i></span>
   </div>
+
+  <div class="start-tour-button">
+    <button id="startTourButton">
+      Start Tour
+    </button>
+  </div>
+
+  <div class="containers">
+    <div class="temperature-input" id="celsius" data-step="1" data-intro="Hello" data-bs-toggle="tooltip"
+      data-bs-placement="top" title="Convert Celsius Here">
+      <input type="number" id="celsiusInput" placeholder="Celsius" />
+      <span class="unit">°C</span>
+    </div>
+    <div class="temperature-input" id="fahrenheit" data-bs-toggle="tooltip" data-bs-placement="top"
+      title="Convert Fahrenheit Here">
+      <input type="number" id="fahrenheitInput" placeholder="Fahrenheit" />
+      <span class="unit">°F</span>
+    </div>
+    <div class="temperature-input" id="kelvin" data-bs-toggle="tooltip" data-bs-placement="top"
+      title="Convert Kelvin Here">
+      <input type="number" id="kelvinInput" placeholder="Kelvin" />
+      <span class="unit">K</span>
+    </div>
+
+    <div class="button">
+      <button id="clearButton">All Clear</button>
+    </div>
+  </div>
+
+  <section class="footer">
+    <div class="footer-content">
+      <h2>Temperature Converter</h2>
+      <p class="footer-para">
+        Simplify temperature conversions with our user-friendly tool. Quickly switch between Celsius, Fahrenheit, and
+        Kelvin using HTML, CSS, and JavaScript.
+        Stay connected for more updates! 🌡️🔥❄️
+      </p>
+    </div>
+    <div class="social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-snapchat"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <hr />
+    <p class="copyright-heading">Made with ❤️</p>
+    <p class="copyright">
+      &copy; 2023 - Temperature Converter
+    </p>
+  </section>
 
   <script src="script.js"></script>
 </body>
