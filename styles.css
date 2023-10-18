@@ -15,55 +15,6 @@ body {
   background: linear-gradient(to top, #0093E9, #80D0C7);
 }
 
-/* Header Styles */
-header {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 0;
-  text-align: center;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-}
-
-.home-bar a,
-.app-name a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  margin-right: 20px;
-}
-
-/* Style the links as needed, e.g., add hover effects */
-.home-bar a:hover,
-.app-name a:hover {
-  text-decoration: underline;
-}
-
-/* Header Styles */
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap-reverse;
-  gap: 10px;
-  color: #000;
-  margin-top: 1rem;
-}
-
-.header h1 {
-  font-size: 30px;
-  letter-spacing: 1.2px;
-}
-
-.header .temperature-icon {
-  font-size: 45px;
-}
-
 /* Start Tour Button Styles */
 .start-tour-button {
   display: flex;
