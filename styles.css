@@ -80,7 +80,8 @@ body {
 }
 
 .temperature-input .unit {
-  flex: 1;
+  /* flex: 1; */
+  width: 70px;
   height: 60px;
   line-height: 60px;
   padding: 0 5px;
@@ -90,6 +91,7 @@ body {
   background: #0093E9;
   color: #fff;
   border-radius: 0 8px 8px 0;
+
 }
 
 /* Button Styles */
@@ -174,4 +176,34 @@ body {
   text-align: center;
   font-size: 20px;
   color: #f5efef;
+}
+
+@media screen and (max-width: 768px) {
+
+  .containers {
+    width: 70%;
+  }
+
+  .temperature-input input {
+    width: 80%;
+  }
+  
+  .header h1 {
+    text-align: center;
+  }
+
+  #startTourButton {
+    margin-top: 25px;
+  }
+
+}
+
+@media screen and (max-width:450px) {
+  .footer-para {
+    padding: 0;
+  }
+
+  .temperature-input .unit {
+    width: 50px;
+  }
 }
