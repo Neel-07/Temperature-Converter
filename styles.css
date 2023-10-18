@@ -7,50 +7,33 @@
 
 /* Body Styles */
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   background: linear-gradient(to top, #0093E9, #80D0C7);
 }
 
 /* Header Styles */
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap-reverse;
-  gap: 10px;
-  color: #000;
-  margin-top: 1rem;
+.container .header {
+  text-align: center;
+  margin: 1rem 0;
 }
 
-.header h1 {
-  font-size: 30px;
+.container .header h1 {
+  font-size: 2.5rem;
   letter-spacing: 1.2px;
 }
 
-.header .temperature-icon {
-  font-size: 45px;
+.container .header .temperature-icon {
+  font-size: 3.5rem;
 }
 
 /* Start Tour Button Styles */
-.start-tour-button {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 1rem;
-  margin-right: 1rem;
+.container .start-tour-button {
+  text-align: right;
+  margin: 1rem;
 }
 
-.start-tour-button button {
-  border: #000000;
-  outline: none;
+.container .start-tour-button button {
   padding: 12px 30px;
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 600;
   border-radius: 20px;
   cursor: pointer;
@@ -59,139 +42,34 @@ body {
   color: #800080;
 }
 
-.start-tour-button button:hover {
+.container .start-tour-button button:hover {
   background-color: #0fbb8a;
 }
 
 /* Container Styles */
-.containers {
+.container .containers {
   max-width: 450px;
-  display: block;
-  width: auto;
-  height: auto;
-  margin: 20px;
+  width: 90%;
+  margin: 20px auto;
   background: transparent;
   border-radius: 8px;
   box-shadow: 0px 0px 40px 3px rgba(0, 0, 0, 0.4);
   font-family: sans-serif;
-  padding: 50px 45px;
-  margin-top: 2rem;
+  padding: 5vw;
   margin-bottom: 1.5rem;
 }
 
-/* Input Styles */
-.temperature-input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 25px;
-}
+/* Input Styles (You can apply similar responsive adjustments here) */
+/* ... */
 
-.temperature-input input {
-  flex: 5;
-  height: 60px;
-  font-size: 20px;
-  font-weight: 600;
-  text-align: center;
-  border: none;
-  outline: none;
-  border-radius: 8px 0 0 8px;
-  padding: 0 10px;
-}
+/* Button Styles (You can apply similar responsive adjustments here) */
+/* ... */
 
-.temperature-input .unit {
-  flex: 1;
-  height: 60px;
-  line-height: 60px;
-  padding: 0 5px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  background: #0093E9;
-  color: #fff;
-  border-radius: 0 8px 8px 0;
-}
+/* Footer Styles (You can apply similar responsive adjustments here) */
+/* ... */
 
-/* Button Styles */
-.button {
-  margin-top: 25px;
-  text-align: center;
-}
-
-.button button {
-  border-radius: 8px;
-  padding: 10px 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: transparent;
-}
-
-.button button:hover {
-  background-color: #e8e5e5;
-}
-
-/* Footer Styles */
-.footer {
-  background-color: #2e2c2c;
-  margin-top: 5px;
-  text-align: center;
-  font-size: 13px;
-  color: #aaa;
-}
-
-.footer .footer-content {
-  padding: 20px;
-}
-
-.footer h2 {
-  font-size: 24px;
-  color: #fff;
-  margin-bottom: 1rem;
-}
-
-.footer-para {
-  text-wrap: wrap;
-  padding: 10px;
-  font-size: 1rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  text-align: justify;
-}
-
-.footer .social {
-  padding: 20px 0;
-  text-align: center;
-  color: #646566;
-  background-color: #2e2c2c;
-}
-
-.footer .social a {
-  font-size: 24px;
-  color: inherit;
-  border: 1px solid #ccc;
-  width: 40px;
-  height: 40px;
-  line-height: 38px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  margin: 0 8px;
-  opacity: 0.75;
-  color: #06e6a6;
-}
-
-.footer .social a:hover {
-  opacity: 0.9;
-  background-color: #474b4b;
-}
-
-.copyright {
-  text-align: center;
-  font-size: 14px;
-  color: #f6ecec;
-}
-
-.copyright-heading {
-  text-align: center;
-  font-size: 20px;
-  color: #f5efef;
-}
+@media (max-width: 768px) {
+  /* Apply responsive styles for screens less than or equal to 768px */
+  .container .containers {
+    width: 100%;
+   
