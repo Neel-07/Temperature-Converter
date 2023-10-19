@@ -23,20 +23,27 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Link to your CSS file -->
 </head>
 
 <body>
-  <div class="header">
-    <h1>Temperature Converter</h1>
-    <span class="temperature-icon"><i class="fas fa-temperature-high"></i></span>
-  </div>
 
-  <div class="start-tour-button">
-  <button id="startTourButton">
-    Start Tour
-  </button>
-  </div>
+  
+    <nav class ="navbar">
+       <div class="header"><h1>Temperature Converter</h1>
+          <span class="temperature-icon"><i class="fas fa-temperature-high"></i></span>
+       </div>
+    
+       <div class="start-tour-button">
+              <button id="startTourButton">Start Tour</button>
+       </div>
+       <input type="checkbox" id="hamburger" class="hamburger-checkbox">
+       <label for = "hamburger" class="hamburger-label">
+        <i class="fa-solid fa-bars"></i>
+       </label>
+     </nav>
 
   <div class="containers">
     <div class="temperature-input" id="celsius" data-step="1" data-intro="Hello" data-bs-toggle="tooltip"
