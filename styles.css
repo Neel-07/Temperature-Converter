@@ -6,17 +6,17 @@
 }
 
 /* Navbar */
+/* Navbar */
 .navbar {
+  background-color: #333;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #333;
-  color: #fff;
-  height: 80px;
-  flex-wrap: wrap;
-  text-align: center;
   padding: 10px;
+  text-align: center;
 }
+
 
 .header {
   display: flex;
