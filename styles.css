@@ -6,112 +6,31 @@
 }
 
 /* Navbar */
-
 .navbar {
-  /* display: flex; */
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #333; 
-  color: #fff; 
+  background-color: #333;
+  color: #fff;
   height: 80px;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
   flex-wrap: wrap;
-
+  text-align: center;
+  padding: 10px;
 }
-
 
 .header {
   display: flex;
-  flex: 1;
   align-items: center;
-  position: absolute;
-  left: 1rem;
-
 }
 
- .temperature-icon{
+.temperature-icon i {
   font-size: 2rem;
   margin-left: 15px;
- } 
-
-
-
- .hamburger-label{
-  display: none;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  right: 1rem;
-  margin-top: 2rem;
-  margin-right: 1rem;
-
- }
-
-
- .hamburger-checkbox {
-  display: none;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  right: 1rem;
-  margin-top: 2rem;
-  margin-right: 1rem;
-} 
-
-.hamburger-label {
-  cursor: pointer;
-}
-
- 
- @media screen and (max-width: 800px) {
-  .hamburger-label{
-    display: block;
-  }
-  .header, .start-tour-button {
-    display: block; 
-    text-align: center; 
-   
-}
-.start-tour-button {
-  margin-left: 0; 
-  margin-top: 10px; 
-}
-.header h1 {
-  margin-top: 10px; 
-}
-}
-  
-/* Body Styles */
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(to top, #0093E9, #80D0C7);
-}
-
-/* Start Tour Button Styles */
-.start-tour-button {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  right: 3rem;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  margin-left: auto;
 }
 
 .start-tour-button button {
-  border: #000000;
-  outline: none;
-  padding: 12px 30px;
+  padding: 12px 24px;
   font-size: 18px;
-  font-weight: 600;
-  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
   background-color: #06e6a6;
@@ -122,10 +41,19 @@ body {
   background-color: #0fbb8a;
 }
 
+/* Body Styles */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to top, #0093E9, #80D0C7);
+}
+
 /* Container Styles */
 .containers {
   max-width: 450px;
-  display: block;
   width: auto;
   height: auto;
   margin: 20px;
@@ -208,7 +136,6 @@ body {
 }
 
 .footer-para {
-  text-wrap: wrap;
   padding: 10px;
   font-size: 1rem;
   padding-left: 3rem;
