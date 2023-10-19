@@ -1,95 +1,201 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This web application provides a simple and intuitive interface for converting temperatures between Celsius and Fahrenheit. Whether you need quick temperature conversions for cooking, weather analysis, or any other purpose, this tool has got you covered."
+    />
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="This web application provides a simple and intuitive interface for converting temperatures between Celsius and Fahrenheit. Whether you need quick temperature conversions for cooking, weather analysis, or any other purpose, this tool has got you covered." />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Temperature Converter" />
+    <meta property="og:site_name" content="Temperature Converter" />
+    <meta
+      property="og:url"
+      content="https://neel-07.github.io/Temperature-Converter/"
+    />
+    <meta
+      property="og:description"
+      content="This web application provides a simple and intuitive interface for converting temperatures between Celsius and Fahrenheit. Whether you need quick temperature conversions for cooking, weather analysis, or any other purpose, this tool has got you covered."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://i.postimg.cc/pVgKKQPX/temp.png"
+    />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Temperature Converter" />
-  <meta property="og:site_name" content="Temperature Converter" />
-  <meta property="og:url" content="https://neel-07.github.io/Temperature-Converter/" />
-  <meta property="og:description" content="This web application provides a simple and intuitive interface for converting temperatures between Celsius and Fahrenheit. Whether you need quick temperature conversions for cooking, weather analysis, or any other purpose, this tool has got you covered." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://i.postimg.cc/pVgKKQPX/temp.png" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@yourTwitterHandle" />
+    <meta name="twitter:title" content="Temperature Converter" />
+    <meta
+      name="twitter:description"
+      content="This web application provides a simple and intuitive interface for converting temperatures between Celsius and Fahrenheit. Whether you need quick temperature conversions for cooking, weather analysis, or any other purpose, this tool has got you covered."
+    />
+    <meta
+      name="twitter:image"
+      content="https://i.postimg.cc/pVgKKQPX/temp.png"
+    />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@yourTwitterHandle" />
-  <meta name="twitter:title" content="Temperature Converter" />
-  <meta name="twitter:description" content="This web application provides a simple and intuitive interface for converting temperatures between Celsius and Fahrenheit. Whether you need quick temperature conversions for cooking, weather analysis, or any other purpose, this tool has got you covered." />
-  <meta name="twitter:image" content="https://i.postimg.cc/pVgKKQPX/temp.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <link rel="stylesheet" href="styles.css" />
+    <!-- Added CDN for tour guide -->
+    <script src="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/intro.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/minified/introjs.min.css"
+    />
 
-  <!-- Added CDN for tour guide -->
-  <script src="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/intro.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/minified/introjs.min.css" />
+    <!-- Added CDN for font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Added CDN for Tooltip -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-</head>
+    <!-- Added CDN for Tooltip -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
-  <nav class="navbar">
-    <div class="header">
-      <h1>Temperature Converter</h1>
-      <span class="temperature-icon"><i class="fas fa-temperature-high"></i></span>
+  <body>
+    <nav class="navbar">
+      <div class="header">
+        <h1>Temperature Converter</h1>
+        <span class="temperature-icon"
+          ><i class="fas fa-temperature-high"></i
+        ></span>
+      </div>
+
+      <div class="start-tour-button">
+        <!-- <button>Get Started</button> -->
+        <button class="cssbuttons-io-button" id="startTourButton">
+          Get started
+          <div class="icon">
+            <svg
+              height="24"
+              width="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </button>
+      </div>
+
+      <input type="checkbox" id="hamburger" class="hamburger-checkbox" />
+      <label for="hamburger" class="hamburger-label">
+        <i class="fas fa-bars"></i>
+      </label>
+    </nav>
+
+    <div class="containers">
+      <div
+        class="temperature-input"
+        id="celsius"
+        data-step="1"
+        data-intro="Hello"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Convert Celsius Here"
+      >
+        <input type="number" id="celsiusInput" placeholder="Celsius" />
+        <span class="unit">°C</span>
+      </div>
+      <div
+        class="temperature-input"
+        id="fahrenheit"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Convert Fahrenheit Here"
+      >
+        <input type="number" id="fahrenheitInput" placeholder="Fahrenheit" />
+        <span class="unit">°F</span>
+      </div>
+      <div
+        class="temperature-input"
+        id="kelvin"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Convert Kelvin Here"
+      >
+        <input type="number" id="kelvinInput" placeholder="Kelvin" />
+        <span class="unit">K</span>
+      </div>
+
+      <div class="button">
+        <button class="Btn" id="clearButton">
+          <span>Clear All</span>
+          <i class="fa-solid fa-broom"></i>
+        </button>
+
+        <!-- <button class="button"></button> -->
+      </div>
     </div>
 
-    <div class="start-tour-button">
-      <button id="startTourButton">Start Tour</button>
-    </div>
+    <section class="footer">
+      <div class="footer-content">
+        <h2>Temperature Converter</h2>
+        <p class="footer-para">
+          Simplify temperature conversions with our user-friendly tool. Quickly
+          switch between Celsius, Fahrenheit, and Kelvin using HTML, CSS, and
+          JavaScript. Stay connected for more updates! 🌡️🔥❄️
+        </p>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-snapchat"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <hr />
+      <p class="copyright-heading">Made with ❤️</p>
+      <p class="copyright">&copy; 2023 - Temperature Converter</p>
+    </section>
 
-    <input type="checkbox" id="hamburger" class="hamburger-checkbox">
-    <label for="hamburger" class="hamburger-label">
-      <i class="fas fa-bars"></i>
-    </label>
-  </nav>
-
-  <div class="containers">
-    <div class="temperature-input" id="celsius" data-step="1" data-intro="Hello" data-bs-toggle="tooltip" data-bs-placement="top" title="Convert Celsius Here">
-      <input type="number" id="celsiusInput" placeholder="Celsius" />
-      <span class="unit">°C</span>
-    </div>
-    <div class="temperature-input" id="fahrenheit" data-bs-toggle="tooltip" data-bs-placement="top" title="Convert Fahrenheit Here">
-      <input type="number" id="fahrenheitInput" placeholder="Fahrenheit" />
-      <span class="unit">°F</span>
-    </div>
-    <div class="temperature-input" id="kelvin" data-bs-toggle="tooltip" data-bs-placement="top" title="Convert Kelvin Here">
-      <input type="number" id="kelvinInput" placeholder="Kelvin" />
-      <span class="unit">K</span>
-    </div>
-
-    <div class="button">
-      <button id="clearButton">Clear All</button>
-    </div>
-  </div>
-
-  <section class="footer">
-    <div class="footer-content">
-      <h2>Temperature Converter</h2>
-      <p class="footer-para">Simplify temperature conversions with our user-friendly tool. Quickly switch between Celsius, Fahrenheit, and Kelvin using HTML, CSS, and JavaScript. Stay connected for more updates! 🌡️🔥❄️</p>
-    </div>
-    <div class="social">
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-snapchat"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-    </div>
-    <hr />
-    <p class="copyright-heading">Made with ❤️</p>
-    <p class="copyright">&copy; 2023 - Temperature Converter</p>
-  </section>
-
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
