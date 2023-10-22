@@ -152,7 +152,7 @@ body {
 }
 
 .footer .social a {
-  font-size: 24px;
+  font-size: 25px;
   color: inherit;
   border: 1px solid #ccc;
   width: 40px;
@@ -282,4 +282,42 @@ body {
   transform: translate(3px, 3px);
   transition-duration: 0.3s;
   box-shadow: 2px 2px 0px rgb(140, 32, 212);
+}
+/* For devices with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+  .containers {
+    width: 80%;
+  }
+
+  .temperature-input input {
+    width: 80%;
+  }
+}
+
+/* For devices with a maximum width of 576px */
+@media only screen and (max-width: 576px) {
+  .containers {
+    width: 90%;
+    padding: 14px;
+    margin: 10px;
+  }
+  .start-tour-button{
+    scale: 0.6;
+    margin-top: -13px;
+    margin-bottom: -13px;
+  }
+  .footer{
+    height: 30%;
+  }
+  .footer-para {
+    font-size: 0.9rem;
+    padding: 7px;
+  }
+  .footer .footer-content {
+    padding: 9px;
+    margin: -4px;
+  }
+  .temperature-input input {
+    width: 90%;
+  }
 }
