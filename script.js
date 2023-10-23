@@ -126,3 +126,42 @@ var tooltipTriggerList = [].slice.call(
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl);
 });
+
+
+//For ConactUs
+function toggleContactForm() {
+  var contactForm = document.getElementById("collapseExample");
+  if (contactForm) {
+      contactForm.classList.toggle("show");
+  }
+}
+
+function mailto(e) {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    const object = {};
+    data.forEach((value, key) => (object[key] = value));
+
+    var name = object["contact_name"];
+    var place = object["contact_place"];
+    var email = "neelmishra9125@gmail.com";
+
+    var subject = `Name: ${name} and Place: ${place}`;
+    var encodedSubject = encodeURI(subject);
+    var mailto_link = "mailto:" + email + `?subject=${encodedSubject}`;
+
+    window.location.href = mailto_link;
+    
+    document.getElementById("contact").reset();
+}
+
+document.getElementById('next').onclick = function(){
+    let lists = document.querySelectorAll('.item');
+    document.getElementById('slide').appendChild(lists[0]);
+}
+document.getElementById('prev').onclick = function(){
+    let lists = document.querySelectorAll('.item');
+    document.getElementById('slide').prepend(lists[lists.length - 1]);
+}
+  
