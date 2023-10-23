@@ -172,6 +172,57 @@ body {
   background-color: #474b4b;
 }
 
+/*Contact-Us*/
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+a {
+  color: white;
+}
+
+.contact-us {
+  display: block;
+  align-content: center;
+}
+
+#button-contact {
+  display: block;
+  position: static;
+  width: fit-content;
+  margin-bottom: 4%;
+}
+
+.contact-btn-text {
+  vertical-align: middle;
+}
+
+.card-card-body {
+  color: white;
+}
+
+#contact-form-text {
+  margin-left: 3%;
+  text-align: left;
+  margin-right: 14%;
+}
+
+#contact-options {
+  margin-left: 3%;
+  text-align: left;
+  margin-right: 14%;
+}
+
+.name {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
 .copyright {
   text-align: center;
   font-size: 14px;
