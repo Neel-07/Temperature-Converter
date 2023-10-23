@@ -124,6 +124,7 @@ body {
   text-align: center;
   font-size: 13px;
   color: #aaa;
+  width: 100vw;
 }
 
 .footer .footer-content {
