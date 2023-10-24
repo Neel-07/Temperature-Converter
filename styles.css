@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  width: 100vw;
+  width: 100%;
 }
 
 .header {
@@ -28,6 +28,7 @@
 
 /* Body Styles */
 body {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,7 +40,7 @@ body {
 /* Container Styles */
 .containers {
   max-width: 450px;
-  width: auto;
+  width: 98%;
   height: auto;
   margin: 20px;
   background: transparent;
@@ -99,7 +100,7 @@ body {
   text-align: center;
   font-size: 13px;
   color: #aaa;
-  width: 100vw;
+  width: 100%;
 }
 
 .footer .footer-content {
@@ -347,7 +348,7 @@ a {
 
   .footer .footer-content {
     padding: 9px;
-    margin: -4px;
+    /* margin: -4px; */
   }
 
   .temperature-input input {
