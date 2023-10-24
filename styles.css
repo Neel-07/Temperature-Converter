@@ -142,6 +142,7 @@ body {
   margin: 0 8px;
   opacity: 0.75;
   color: #06e6a6;
+  transition: box-shadow 0.3s ease-in-out;  /* Add a smooth transition */
 }
 
 .footer .social a:hover {
@@ -378,5 +379,5 @@ a {
 }
 
 .social a:hover{
-  box-shadow: 1px 1px 3px 2px rgb(55, 191, 164);
+    box-shadow: 0 0 10px rgba(55, 191, 164, 0.7); /* Apply a shadow on hover */
 }
