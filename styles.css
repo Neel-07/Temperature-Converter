@@ -3,9 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+   font-family: 'Chakra Petch', sans-serif;;
 }
 
-/* Navbar */
 /* Navbar */
 .navbar {
   background-color: #333;
@@ -14,7 +14,7 @@
   justify-content:center;
   align-items: center;
   padding: 10px;
-  width: 100vw;
+  width: 100%;
 }
 
 .header {
@@ -28,33 +28,21 @@
   margin-left: 15px;
 }
 
-/* .start-tour-button button {
-  padding: 12px 24px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  background-color: #06e6a6;
-  color: #800080;
-} */
-
-/* .start-tour-button button:hover {
-  background-color: #0fbb8a;
-} */
-
 /* Body Styles */
 body {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(to top, #0093e9, #80d0c7);
+  background: linear-gradient(to top, #173bca, #80d0c7);
 }
 
 /* Container Styles */
 .containers {
   max-width: 450px;
-  width: auto;
+  width: 98%;
   height: auto;
   margin: 20px;
   background: transparent;
@@ -105,18 +93,7 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
-/*
-.button button {
-  border-radius: 8px;
-  padding: 10px 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  background-color: transparent;
-}
 
-.button button:hover {
-  background-color: #e8e5e5;
-} */
 
 /* Footer Styles */
 .footer {
@@ -125,29 +102,29 @@ body {
   text-align: center;
   font-size: 13px;
   color: #aaa;
-  width: 100vw;
+  width: 100%;
 }
 
 .footer .footer-content {
-  padding: 20px;
+  padding: 1rem 1rem 1rem 0rem;
 }
 
 .footer h2 {
-  font-size: 24px;
+  font-size: 2rem;
   color: #fff;
   margin-bottom: 1rem;
 }
 
 .footer-para {
-  padding: 10px;
-  font-size: 1rem;
+  padding: 0px;
+  font-size: 1.5rem;
   padding-left: 3rem;
   padding-right: 3rem;
   text-align: justify;
 }
 
 .footer .social {
-  padding: 20px 0;
+  padding: 0.8rem 0;
   text-align: center;
   color: #646566;
   background-color: #2e2c2c;
@@ -269,7 +246,7 @@ a {
   height: 2.2em;
   width: 2.2em;
   border-radius: 0.7em;
-  box-shadow: 0.1em 0.1em 0.6em 0.2em #5295b9;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #0f2ec8;
   right: 0.3em;
   transition: all 0.3s;
 }
@@ -336,6 +313,7 @@ a {
   transition-duration: 0.3s;
   box-shadow: 2px 2px 0px rgb(140, 32, 212);
 }
+
 /* For devices with a maximum width of 768px */
 @media only screen and (max-width: 768px) {
   .containers {
@@ -354,22 +332,27 @@ a {
     padding: 14px;
     margin: 10px;
   }
-  .start-tour-button{
+
+  .start-tour-button {
     scale: 0.6;
     margin-top: -13px;
     margin-bottom: -13px;
   }
-  .footer{
+
+  .footer {
     height: 30%;
   }
+
   .footer-para {
     font-size: 0.9rem;
     padding: 7px;
   }
+
   .footer .footer-content {
     padding: 9px;
-    margin: -4px;
+    /* margin: -4px; */
   }
+
   .temperature-input input {
     width: 90%;
   }
