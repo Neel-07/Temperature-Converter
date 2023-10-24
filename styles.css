@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+   font-family: 'Chakra Petch', sans-serif;;
 }
 
 /* Navbar */
@@ -127,25 +128,25 @@ body {
 }
 
 .footer .footer-content {
-  padding: 20px;
+  padding: 1rem 1rem 1rem 0rem;
 }
 
 .footer h2 {
-  font-size: 24px;
+  font-size: 2rem;
   color: #fff;
   margin-bottom: 1rem;
 }
 
 .footer-para {
-  padding: 10px;
-  font-size: 1rem;
+  padding: 0px;
+  font-size: 1.5rem;
   padding-left: 3rem;
   padding-right: 3rem;
   text-align: justify;
 }
 
 .footer .social {
-  padding: 20px 0;
+  padding: 0.8rem 0;
   text-align: center;
   color: #646566;
   background-color: #2e2c2c;
