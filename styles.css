@@ -20,7 +20,7 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .temperature-icon i {
@@ -323,6 +323,9 @@ a {
   .temperature-input input {
     width: 80%;
   }
+  .header{
+    justify-content: center;
+  }
 }
 
 /* For devices with a maximum width of 576px */
@@ -355,5 +358,8 @@ a {
 
   .temperature-input input {
     width: 90%;
+  }
+  .header {
+      justify-content: center;
   }
 }
