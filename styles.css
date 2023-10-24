@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  width: 97vw;
+  width: 100%;
 }
 
 .header {
@@ -100,7 +100,7 @@ body {
   text-align: center;
   font-size: 13px;
   color: #aaa;
-  width: 97vw;
+  width: 100%;
 }
 
 .footer .footer-content {
