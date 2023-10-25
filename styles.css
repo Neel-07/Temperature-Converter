@@ -11,15 +11,21 @@
   background-color: #333;
   color: #fff;
   display: flex;
+  justify-content:center;
   align-items: center;
-  justify-content: space-between;
   padding: 10px;
   width: 100%;
+}
+.nav{
+  display: flex !important;
+  justify-content: space-between !important;;
+  align-items: center !important;;
 }
 
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .temperature-icon i {
@@ -327,6 +333,9 @@ a {
   .temperature-input input {
     width: 80%;
   }
+  .nav{
+    justify-content: center !important;
+  }
 }
 
 /* For devices with a maximum width of 576px */
@@ -359,6 +368,9 @@ a {
 
   .temperature-input input {
     width: 90%;
+  }
+  .nav {
+          justify-content: center !important;
   }
     #button-contact {
       width: 115;
