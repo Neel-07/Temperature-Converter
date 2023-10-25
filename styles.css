@@ -98,7 +98,7 @@ body {
 /* Footer Styles */
 .footer {
   background-color: #2e2c2c;
-  margin-top: 5px;
+  padding-top: 20px;
   text-align: center;
   font-size: 13px;
   color: #aaa;
@@ -143,6 +143,7 @@ body {
   margin: 0 8px;
   opacity: 0.75;
   color: #06e6a6;
+  transition: box-shadow 0.3s ease-in-out;  /* Add a smooth transition */
 }
 
 .footer .social a:hover {
@@ -165,6 +166,9 @@ a {
 .contact-us {
   display: block;
   align-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
 }
 
 #button-contact {
@@ -172,6 +176,7 @@ a {
   position: static;
   width: fit-content;
   margin-bottom: 4%;
+ 
 }
 
 .contact-btn-text {
@@ -359,7 +364,29 @@ a {
   .temperature-input input {
     width: 90%;
   }
+<<<<<<< HEAD
   .header {
       justify-content: center;
   }
 }
+=======
+    #button-contact {
+      width: 115;
+     height: 40px;
+  }
+    .contact-btn-text{
+      font-size: 16px;
+    }
+    #contact-form-text h1{
+      font-size: 1.5rem;
+    }
+}
+
+.social a:hover i{
+    font-size: 26px; 
+}
+
+.social a:hover{
+    box-shadow: 0 0 10px rgba(55, 191, 164, 0.7); /* Apply a shadow on hover */
+}
+>>>>>>> a5c668e996133033637f50a967110792176806de

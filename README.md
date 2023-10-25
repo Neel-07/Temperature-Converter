@@ -29,19 +29,13 @@ Welcome to the Temperature Converter project repository! This web application pr
 4.  **Instant Conversion:**
     The corresponding temperature in the other unit will be displayed in real-time.
 
-        <img width="415" alt="image" src="https://github.com/Neel-07/Temperature-Converter/assets/112561276/ff7f33a1-4b86-405e-82cf-84aa211208d3">
+   
 
 ## Technologies Used 🚀
 
 - **HTML5**: For structuring the web content.
 - **CSS3**: For styling the user interface.
 - **JavaScript**: For real-time temperature conversion.
-
-
-
-## Demo/Video
-https://github.com/devham236/Temperature-Converter/assets/90037750/d5d98d86-193e-4a26-8b30-69203bba2b9d
-
 
 
 ## How to Contribute 🧩
