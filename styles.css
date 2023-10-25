@@ -364,12 +364,9 @@ a {
   .temperature-input input {
     width: 90%;
   }
-<<<<<<< HEAD
   .header {
       justify-content: center;
   }
-}
-=======
     #button-contact {
       width: 115;
      height: 40px;
@@ -389,4 +386,3 @@ a {
 .social a:hover{
     box-shadow: 0 0 10px rgba(55, 191, 164, 0.7); /* Apply a shadow on hover */
 }
->>>>>>> a5c668e996133033637f50a967110792176806de
