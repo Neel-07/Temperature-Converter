@@ -38,12 +38,6 @@ Welcome to the Temperature Converter project repository! This web application pr
 - **JavaScript**: For real-time temperature conversion.
 
 
-
-## Demo/Video
-https://github.com/Neel-07/Temperature-Converter/blob/main/assets/Demo%20video.mp4
-
-
-
 ## How to Contribute 🧩
 
 We welcome contributions from the community! If you'd like to contribute to this project, follow these steps:
